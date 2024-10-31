@@ -1,0 +1,113 @@
+/*---------------
+Skin: Default
+---------------*/
+
+/*Note: Use ID specific toplevel #ps for skinn css*/
+.post-slides .item.skin-default {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-width: 750px;
+  max-height: 275px;
+  background: #6bc3eb;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+}
+#category-key.skin-default a {
+  margin: 15px 0 0 0;
+}
+#category-key.skin-default a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+}
+#ps.default {
+  opacity: 0;
+}
+#ps .skin-default {
+  min-height: 275px;
+  min-width: 100%;
+}
+#ps .skin-default slide {
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-transform: uppercase;
+}
+#ps .skin-default .image {
+  -webkit-transition: opacity .5s;
+  transition: opacity 0.35s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+#ps  .skin-default:hover .image {
+  opacity: 0;
+}
+#ps  .skin-default slide > div.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0px 30px;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+}
+#ps .skin-default .slide-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  float: right;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+#ps .skin-default h2,
+#ps .skin-default p {
+  text-align: center;
+  -webkit-transform: translate3d(0,-15px,0);
+  transform: translate3d(0,-15px,0);
+}
+#ps .skin-default h2 {
+  word-spacing: 0.4rem;
+  font-weight: 300;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  font-weight: 400;
+}
+#ps .skin-default p {
+  color: #fff;
+  opacity: 0;
+  font-size: 14px;
+  padding: 30px 20px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+}
+#ps .skin-default:hover p {
+  opacity: 1;
+}
+
+#ps .skin-default:hover h2,
+#ps .skin-default:hover p {
+  -webkit-transform: translate3d(0,-80px,0);
+  transform: translate3d(0,-80px,0);
+}
+
+#ps .skin-default:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}

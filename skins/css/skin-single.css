@@ -1,0 +1,147 @@
+/*---------------
+Skin : Single
+---------------*/
+
+/*Note: Use ID specific toplevel #ps for skinn css*/
+.post-slides .item.skin-single {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-width: 750px;
+  max-height: 275px;
+  background: #6bc3eb;
+  text-align: center;
+  cursor: pointer;
+  list-style: none;
+}
+#category-key.skin-single a {
+  margin: 15px 0 0 0;
+}
+#category-key.skin-single a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+}
+#ps.single {
+  padding-top: 0px;
+  opacity: 0;
+}
+#ps.single .owl-nav {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 1px !important;
+  overflow: visible;
+}
+#ps.single .owl-nav .owl-prev, #ps.single .owl-nav .owl-next {
+  position: absolute;
+  height: 75vh;
+  line-height: 75vh;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 50px;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity 0.35s;
+}
+#ps.single .owl-nav .owl-prev:hover, #ps.single .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+#ps.single .owl-nav .owl-next {
+  right: 0;
+}
+#ps.single a {
+  z-index: 8;
+}
+#ps .skin-single {
+  text-align: center;
+  min-height: 75vh;
+  min-width: 100%;
+}
+#ps .skin-single img {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.25;
+  -webkit-transition: opacity .5s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+#ps .skin-single slide {
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-transform: uppercase;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.64) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.64) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.64) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.64) 100%);
+}
+#ps .skin-single slide > div.slide-content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  padding: 0px 30px;
+  width: 100%;
+}
+#ps .skin-single h2 {
+  word-spacing: 0.4rem;
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  font-weight: 400;
+  font: 73px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-transform: none;
+  line-height: 70px;
+  font-weight: 200;
+}
+#ps .skin-single p {
+  max-width: 900px;
+  color: #fff;
+  padding: 0;
+  font-size: 12px;
+  margin: 20px auto;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+  font-size: 36px;
+  font-variant: normal;
+  text-transform: none;
+  font-weight: 200;
+}
+@media screen and (max-height: 530px) {
+  #ps .skin-single {
+    min-height: 400px;
+  }
+  #ps.single .owl-nav .owl-prev, #ps.single .owl-nav .owl-next {
+    height: 400px;
+    line-height: 350px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #ps .skin-single slide > div.slide-content {
+    top: 25%;
+  }
+  #ps .skin-single h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  #ps .skin-single p {
+    font-size: 22px;
+    max-width: 550px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #ps .skin-single {
+    min-height: 350px;
+  }
+  #ps.single .owl-nav .owl-prev, #ps.single .owl-nav .owl-next  {
+    min-height: 350px;
+    line-height: 350px;
+  }
+}
